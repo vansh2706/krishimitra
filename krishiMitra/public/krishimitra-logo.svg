@@ -1,0 +1,156 @@
+<svg width="300" height="180" viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Main background gradient -->
+    <radialGradient id="backgroundGradient" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#2A5F3A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A3F2A;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Leaf gradients for natural look -->
+    <linearGradient id="leafGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8FD957;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7BC83B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6BB02A;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="leafGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A5E76A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8FD957;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Water droplet gradient -->
+    <radialGradient id="waterGradient" cx="30%" cy="20%" r="70%">
+      <stop offset="0%" style="stop-color:#4FB3D9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3A9BC1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D8F;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Main circular background -->
+  <circle cx="150" cy="75" r="65" fill="url(#backgroundGradient)" />
+  
+  <!-- Flowing leaf pattern - creating natural curved arrangement -->
+  <g>
+    <!-- Main curved branch structure -->
+    <path d="M 90 30 Q 120 15 160 25 Q 190 35 210 60 Q 215 90 200 115 Q 170 130 140 125 Q 110 120 85 95 Q 70 70 75 45 Q 80 35 90 30" 
+          fill="none" stroke="url(#leafGradient1)" stroke-width="2" opacity="0.3"/>
+    
+    <!-- Large leaves along the curve -->
+    <g fill="url(#leafGradient1)">
+      <!-- Top section leaves -->
+      <ellipse cx="105" cy="35" rx="8" ry="15" transform="rotate(-20 105 35)" />
+      <ellipse cx="125" cy="28" rx="6" ry="12" transform="rotate(10 125 28)" />
+      <ellipse cx="145" cy="30" rx="7" ry="14" transform="rotate(30 145 30)" />
+      <ellipse cx="165" cy="35" rx="8" ry="16" transform="rotate(45 165 35)" />
+      
+      <!-- Right side leaves -->
+      <ellipse cx="185" cy="50" rx="9" ry="17" transform="rotate(70 185 50)" />
+      <ellipse cx="195" cy="75" rx="7" ry="14" transform="rotate(90 195 75)" />
+      <ellipse cx="190" cy="100" rx="8" ry="15" transform="rotate(110 190 100)" />
+      
+      <!-- Bottom leaves -->
+      <ellipse cx="175" cy="120" rx="9" ry="16" transform="rotate(140 175 120)" />
+      <ellipse cx="150" cy="130" rx="8" ry="15" transform="rotate(170 150 130)" />
+      <ellipse cx="125" cy="125" rx="7" ry="13" transform="rotate(200 125 125)" />
+      
+      <!-- Left side leaves -->
+      <ellipse cx="105" cy="115" rx="8" ry="14" transform="rotate(220 105 115)" />
+      <ellipse cx="90" cy="95" rx="9" ry="16" transform="rotate(250 90 95)" />
+      <ellipse cx="85" cy="70" rx="7" ry="13" transform="rotate(270 85 70)" />
+      <ellipse cx="90" cy="50" rx="8" ry="15" transform="rotate(300 90 50)" />
+    </g>
+    
+    <!-- Smaller accent leaves -->
+    <g fill="url(#leafGradient2)">
+      <ellipse cx="115" cy="40" rx="3" ry="7" transform="rotate(-10 115 40)" />
+      <ellipse cx="135" cy="33" rx="4" ry="8" transform="rotate(20 135 33)" />
+      <ellipse cx="155" cy="38" rx="3" ry="6" transform="rotate(50 155 38)" />
+      <ellipse cx="175" cy="55" rx="4" ry="7" transform="rotate(80 175 55)" />
+      <ellipse cx="185" cy="85" rx="3" ry="6" transform="rotate(100 185 85)" />
+      <ellipse cx="175" cy="110" rx="4" ry="8" transform="rotate(130 175 110)" />
+      <ellipse cx="140" cy="120" rx="3" ry="7" transform="rotate(160 140 120)" />
+      <ellipse cx="115" cy="110" rx="4" ry="6" transform="rotate(210 115 110)" />
+      <ellipse cx="95" cy="85" rx="3" ry="7" transform="rotate(240 95 85)" />
+      <ellipse cx="92" cy="60" rx="4" ry="8" transform="rotate(280 92 60)" />
+    </g>
+  </g>
+  
+  <!-- Sparkling dots -->
+  <g fill="rgba(255,255,255,0.8)">
+    <circle cx="110" cy="45" r="1.5" />
+    <circle cx="170" cy="50" r="1" />
+    <circle cx="180" cy="80" r="1.2" />
+    <circle cx="160" cy="110" r="1" />
+    <circle cx="130" cy="115" r="1.3" />
+    <circle cx="100" cy="90" r="1" />
+    <circle cx="95" cy="65" r="1.1" />
+    <circle cx="140" cy="40" r="0.8" />
+    <circle cx="165" cy="70" r="1.2" />
+  </g>
+  
+  <!-- Water droplet (positioned in upper right area) -->
+  <path d="M 175 45 C 175 42 177 40 180 40 C 183 40 185 42 185 45 C 185 50 180 55 180 55 C 180 55 175 50 175 45 Z" 
+        fill="url(#waterGradient)" />
+  <ellipse cx="181" cy="43" rx="1.5" ry="2" fill="rgba(255,255,255,0.6)" />
+  
+  <!-- Farmer figure (detailed white silhouette) -->
+  <g fill="white">
+    <!-- Hat brim -->
+    <ellipse cx="120" cy="60" rx="12" ry="4" />
+    <!-- Hat crown -->
+    <path d="M 110 58 Q 120 55 130 58 Q 130 62 120 63 Q 110 62 110 58 Z" />
+    
+    <!-- Head -->
+    <circle cx="120" cy="65" r="5" />
+    
+    <!-- Body/shirt -->
+    <path d="M 115 70 Q 120 69 125 70 L 128 85 Q 120 87 112 85 Z" />
+    
+    <!-- Extended pointing arm -->
+    <ellipse cx="135" cy="75" rx="8" ry="2.5" transform="rotate(-10 135 75)" />
+    <circle cx="143" cy="73" r="2" />
+    
+    <!-- Other arm -->
+    <ellipse cx="110" cy="78" rx="6" ry="2" transform="rotate(30 110 78)" />
+    
+    <!-- Legs -->
+    <rect x="117" y="85" width="3" height="8" rx="1.5" />
+    <rect x="122" y="85" width="3" height="8" rx="1.5" />
+  </g>
+  
+  <!-- Tractor (detailed white silhouette) -->
+  <g fill="white">
+    <!-- Main tractor body -->
+    <path d="M 155 85 L 175 85 Q 177 85 177 87 L 177 95 Q 177 97 175 97 L 155 97 Q 153 97 153 95 L 153 87 Q 153 85 155 85 Z" />
+    
+    <!-- Cabin -->
+    <path d="M 158 85 L 170 85 Q 171 82 169 78 L 162 78 Q 160 78 158 80 Z" />
+    
+    <!-- Large rear wheel with detailed gear -->
+    <circle cx="167" cy="100" r="6" />
+    <circle cx="167" cy="100" r="8" fill="none" stroke="white" stroke-width="2" />
+    
+    <!-- Gear teeth on wheel -->
+    <g fill="white">
+      <rect x="166" y="89" width="2" height="3" />
+      <rect x="166" y="108" width="2" height="3" />
+      <rect x="156" y="99" width="3" height="2" />
+      <rect x="175" y="99" width="3" height="2" />
+      <rect x="160" y="93" width="2" height="2" transform="rotate(45 161 94)" />
+      <rect x="172" y="93" width="2" height="2" transform="rotate(-45 173 94)" />
+      <rect x="160" y="105" width="2" height="2" transform="rotate(-45 161 106)" />
+      <rect x="172" y="105" width="2" height="2" transform="rotate(45 173 106)" />
+    </g>
+    
+    <!-- Smaller front wheel -->
+    <circle cx="158" cy="100" r="4" />
+    <circle cx="158" cy="100" r="2.5" fill="url(#backgroundGradient)" />
+    
+    <!-- Exhaust pipe -->
+    <rect x="175" y="78" width="2" height="8" rx="1" />
+    <ellipse cx="176" cy="76" rx="2" ry="1" />
+  </g>
+  
+  <!-- KrishiMitra Text -->
+  <text x="150" y="165" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">KrishiMitra</text>
+</svg>

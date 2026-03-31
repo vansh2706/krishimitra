@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Brown Planthopper",
+    "crop": "Rice",
+    "symptoms": "Hopper burn, yellowing, stunted growth",
+    "severity": "high",
+    "remedy": "Maintain field water, apply recommended insecticides, introduce predator spiders",
+    "region": "East, South"
+  },
+  {
+    "name": "Fall Armyworm",
+    "crop": "Maize",
+    "symptoms": "Leaf scraping, window panes, whorl feeding",
+    "severity": "high",
+    "remedy": "Hand picking egg masses, pheromone traps, biocontrol with Trichogramma, selective insecticides",
+    "region": "Pan-India"
+  },
+  {
+    "name": "Bollworm",
+    "crop": "Cotton",
+    "symptoms": "Bored squares and bolls, shedding",
+    "severity": "medium",
+    "remedy": "Pheromone traps, release parasitoids, Bt sprays, rotate chemicals",
+    "region": "West, South"
+  },
+  {
+    "name": "Aphids",
+    "crop": "Wheat",
+    "symptoms": "Honeydew, sooty mold, curling leaves",
+    "severity": "medium",
+    "remedy": "Neem oil, ladybird beetles, systemic insecticides if severe",
+    "region": "North"
+  }
+]
